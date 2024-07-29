@@ -7,8 +7,6 @@ function AppLayout() {
   useEffect(() => {
     const scriptPaths = [
       "../assets/vendors/core/core.js",
-      "../assets/vendors/flatpickr/flatpickr.min.js",
-      "../assets/vendors/apexcharts/apexcharts.min.js",
       "../assets/vendors/feather-icons/feather.min.js",
       "../assets/js/template.js",
       "../assets/js/dashboard-light.js",

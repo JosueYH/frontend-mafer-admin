@@ -25,6 +25,7 @@ export function NewClient() {
     Phone: "",
     Mail: "",
     Password: "",
+    BirthDate: "",
     Rol: "",
   });
 
@@ -76,6 +77,7 @@ export function NewClient() {
         "Phone",
         "Mail",
         "Password",
+        "BirthDate",
       ];
 
       const missingFields = requiredFields.filter(
@@ -100,7 +102,7 @@ export function NewClient() {
           icon: "success",
           confirmButtonText: "Aceptar",
         });
-        navigate("/users/");
+        navigate("/clients/");
       } else {
         Swal.fire({
           title: "Error",
@@ -246,7 +248,7 @@ export function NewClient() {
                       <input
                         type="date"
                         className="form-control"
-                        name="Birthday"
+                        name="BirthDate"
                         onChange={handleInputChange}
                       />
                     </div>

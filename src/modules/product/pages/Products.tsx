@@ -14,7 +14,7 @@ const Products: React.FC = () => {
   const [showEditModal, setShowEditModal] = useState<boolean>(false);
   const [currentProduct, setCurrentProduct] = useState<Product | null>(null);
   const [file, setFile] = useState<File | null>(null);
-  const [imagePreview, setImagePreview] = useState<string>('');
+  const [imagePreview, setImagePreview] = useState<string>("");
 
   useEffect(() => {
     loadProducts();
